@@ -18,6 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:gray;
 }
 
 .slider {
@@ -27,7 +28,11 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid green;
+    border: 0.2rem solid black;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color:floralwhite;
 }
 
 .slider input {
@@ -45,8 +50,6 @@ body {
     width: 20%;
     transition: .7s;
     display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
     justify-content: center;
     align-items: center;
 }
@@ -57,7 +60,6 @@ body {
 }
 
 .slider__img input{
-    position: absolute;
     visibility: hidden;
 }
 .slider__navigation {
@@ -65,18 +67,23 @@ body {
 }
 
 .slider__navigation .slider__nav-item {
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    border: 2px solid rgb(207, 41, 41);
-    margin: 7px;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     transition: all .5s ease;
 }
 
-.slider__navigation .slider__nav-item:hover {
-    background-color: aliceblue;
+.slider__navigation .slider__nav-item span{
+    display: block;
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color:darkcyan;
 }
+
+
 
 #radio1:checked ~ .slider__img {
     margin-left: 0;
@@ -102,6 +109,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top: 0.2rem solid black;
 }
 
 .content {
@@ -112,8 +120,9 @@ body {
     display: flex;
     overflow: hidden;
     width: 100%;
-    padding: 1em 0;
-    justify-content: center;
+    padding: 1em 2em;
+    justify-content: start;
+    font-size:x-large;
 }
 
 
@@ -132,4 +141,28 @@ body {
 .input__radio5:checked ~ .slider__info .text5 {
     opacity: 1;
     font-size: 1em;
+}
+
+.input__radio1:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(1) span,
+.input__radio2:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(2) span,
+.input__radio3:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(3) span,
+.input__radio4:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(4) span,
+.input__radio5:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(5) span {
+    background-color:forestgreen;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin: 1rem;
+    font-weight: 600;
+}
+.links a:hover {
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.slider__nav-item:hover span{
+    background-color:salmon !important;
 }
