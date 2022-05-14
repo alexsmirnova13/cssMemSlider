@@ -1,9 +1,135 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.footer {
-    background-color: teal;
-    height: 70px;
+body {
+    position: relative;
+    background-color: lightgray;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid green;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider__img {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.slider__pic {
+    width: 20%;
+    transition: .7s;
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider__img input{
+    position: absolute;
+    visibility: hidden;
+}
+.slider__navigation {
+    display: flex;
+}
+
+.slider__navigation .slider__nav-item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border: 2px solid rgb(207, 41, 41);
+    margin: 7px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.slider__navigation .slider__nav-item:hover {
+    background-color: aliceblue;
+}
+
+#radio1:checked ~ .slider__img {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slider__img {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .slider__img {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .slider__img {
+    margin-left: -300%;
+}
+
+#radio5:checked ~ .slider__img {
+    margin-left: -400%;
+}
+
+.slider__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    width: 50vw;
+}
+
+.slider__text {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 1em 0;
+    justify-content: center;
+}
+
+
+
+.text {
+    font-size: 0;
+    min-height: 10vh;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.input__radio1:checked ~ .slider__info .text1,
+.input__radio2:checked ~ .slider__info .text2,
+.input__radio3:checked ~ .slider__info .text3,
+.input__radio4:checked ~ .slider__info .text4,
+.input__radio5:checked ~ .slider__info .text5 {
+    opacity: 1;
+    font-size: 1em;
 }

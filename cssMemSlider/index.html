@@ -4,41 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Document</title>
 </head>
 <body>
-    <div class="slider ">
-        <h1 class="slider__title">Memes</h1>
-
-        <div class="slider__slides content">
-            <input type="radio" name="slider__radio" id="radio1" checked>
-            <input type="radio" name="slider__radio" id="radio2">
-            <input type="radio" name="slider__radio" id="radio3">
-            <input type="radio" name="slider__radio" id="radio4">
-            <input type="radio" name="slider__radio" id="radio5">
-
-            <div class="slider__img"><img src="./../assets/MemBag.jpg" alt="mem"></div>
-            <div class="slider__img"><img src="./../assets/MemChild.jpg" alt="mem"></div>
-            <div class="slider__img"><img src="./../assets/MemInterview.jpg" alt="mem"></div>
-            <div class="slider__img"><img src="./../assets/MemPainter.jpg" alt="mem"></div>
-            <div class="slider__img"><img src="./../assets/MemHellJS.jpg" alt="mem"></div>
+    <div class="wrapper">
+        <h1>Memes</h1>
+        <div class="content">
+            <div class="slider">
+                <input checked type="radio" name="radio" id="radio1" class="input__radio1">
+                <input type="radio" name="radio" id="radio2" class="input__radio2">
+                <input type="radio" name="radio" id="radio3" class="input__radio3">
+                <input type="radio" name="radio" id="radio4" class="input__radio4">
+                <input type="radio" name="radio" id="radio5" class="input__radio5">
+                <div class="slider__img">
+                    <div class="slider__pic radio1">
+                        <img src="./../assets/MemBug.jpg" alt="Mem Bug">
+                    </div>
+                    <div class="slider__pic">
+                        <img src="./../assets/MemChild.jpg" alt="Mem Child">
+                    </div>
+                    <div class="slider__pic">
+                        <img src="./../assets/MemCleanCode.jpeg" alt="Mem Cean Code">
+                    </div>
+                    <div class="slider__pic">
+                        <img src="./../assets/MemHellJS.jpg" alt="Mem Hell JS">
+                    </div>
+                    <div class="slider__pic">
+                        <img src="./../assets/MemPainter.jpg" alt="Mem Painter">
+                    </div>
+                </div>
+                <div class="slider__info">
+                    <div class="slider__text">
+                        <p class="text text1">подпись1</p>
+                        <p class="text text2">подпись2</p>
+                        <p class="text text3">подпись3</p>
+                        <p class="text text4">подпись4</p>
+                        <p class="text text5">подпись5</p>
+                    </div>
+                    <div class="slider__navigation">
+                        <label for="radio1" class="slider__nav-item"></label>
+                        <label for="radio2" class="slider__nav-item"></label>
+                        <label for="radio3" class="slider__nav-item"></label>
+                        <label for="radio4" class="slider__nav-item"></label>
+                        <label for="radio5" class="slider__nav-item"></label>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         
-
+        <div class="links">
+            <a href="https://github.com/alexsmirnova13">My GitHub</a>
+            <a href="https://github.com/rolling-scopes-school/tasks/tree/master/tasks/css-mem-slider">Task</a>
+        </div>
     </div>
-
-    <div class="navigation">
-        <label for="radio1" class="navigation__bar"></label>
-        <label for="radio2" class="navigation__bar"></label>
-        <label for="radio3" class="navigation__bar"></label>
-        <label for="radio4" class="navigation__bar"></label>
-        <label for="radio5" class="navigation__bar"></label>
-    </div>
-
-    <footer class="footer">
-        <a href="https://github.com/alexsmirnova13" class="footer__link">Github</a>
-        <a href="https://github.com/rolling-scopes-school/tasks/tree/master/tasks/css-mem-slider" class="footer__link">Task</a>
-    </footer>
 </body>
 </html>
