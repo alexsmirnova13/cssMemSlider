@@ -169,6 +169,9 @@ body {
 }
 
 @media (max-width:830px){
+    .content {
+        width: 100%;
+    }
     .slider__info {
         flex-direction: column;
         border-top: none;
@@ -180,6 +183,9 @@ body {
     }
 }
 @media (max-width: 650px) {
+    .content {
+        width: 100%;
+    }
     .slider__info {
         flex-direction: column-reverse;
         border-top: none;
