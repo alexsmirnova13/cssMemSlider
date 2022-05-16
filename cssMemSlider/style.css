@@ -151,7 +151,9 @@ body {
 .input__radio5:checked ~ .slider__info .slider__navigation .slider__nav-item:nth-child(5) span {
     background-color:forestgreen;
 }
-
+.slider__nav-item:active span {
+    background-color: yellow;
+}
 .links a{
     text-decoration: none;
     color: black;
@@ -165,9 +167,11 @@ body {
 }
 
 .slider__nav-item:hover span{
-    background-color:salmon !important;
+    background-color:salmon;
 }
-
+.slider__nav-item:active span {
+    background-color: yellow;
+}
 @media (max-width:830px){
     .content {
         width: 100%;
